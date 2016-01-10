@@ -18,7 +18,7 @@ docker run --rm -v [PATH_TO_YOUR_APP]:/go/src/app golang-builder [APP_NAME]
 Your app directory should contain a Dockerfile which should be used to build the app docker image. Then you can run
 
 ```bash
-docker run --rm -v [PATH_TO_YOUR_APP]:/go/src/[APP_DIR_NAME] -e DOCKER_IMAGE [YOUR_DOCKER_IMAGE_NAME] golang-builder [APP_NAME]
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v [PATH_TO_YOUR_APP]:/go/src/[APP_DIR_NAME] -e DOCKER_IMAGE [YOUR_DOCKER_IMAGE_NAME] golang-builder [APP_NAME]
 ```
 
 Dockerfile example could be:
