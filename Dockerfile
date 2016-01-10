@@ -6,9 +6,10 @@ RUN apk add --no-cache git docker gcc
 RUN go get github.com/Masterminds/glide
 RUN go build github.com/Masterminds/glide
 
-COPY ./build.sh /go/src
 
-VOLUME /go/src
+VOLUME /go/src/app
 WORKDIR /go/src
+
+COPY ./build.sh /go/src/
 
 ENTRYPOINT ["./build.sh"]

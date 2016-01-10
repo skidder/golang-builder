@@ -3,7 +3,7 @@
 set -e -o pipefail
 
 echo Building app $1
-cd $1
+cd app
 
 glide install
 go build -o $1
