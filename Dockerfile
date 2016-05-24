@@ -1,4 +1,4 @@
-FROM golang:1.5.2-alpine
+FROM golang:1.6.2-alpine
 
 ENV GO15VENDOREXPERIMENT 1
 
