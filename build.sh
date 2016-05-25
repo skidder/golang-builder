@@ -2,7 +2,7 @@
 
 set -e -o pipefail
 
-echo Building app with command "$@"
+echo Building app with command: "$@"
 
 cd app
 
