@@ -6,8 +6,6 @@ echo Building app with command: "$@"
 
 cd app
 
-glide install
-
 $@
 
 if [ "$DOCKER_IMAGE" != "" ]; then
