@@ -1,7 +1,7 @@
 golang-builder
 ==============
 
-Simple docker image to build golang apps which are using glide (https://github.com/Masterminds/glide) as dependency manager and a docker image which includes the app. The image is based on the golang:1.6.2-alpine image.
+Simple docker image to build golang apps which are using glide (https://github.com/Masterminds/glide) as dependency manager and a docker image which includes the app. The image is based on the golang:1.6.3-alpine image.
 
 ### Usage
 
