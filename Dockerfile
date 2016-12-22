@@ -2,7 +2,7 @@ FROM golang:1.7.4-alpine
 
 ENV GO15VENDOREXPERIMENT 1
 
-RUN apk add --no-cache git docker gcc make
+RUN apk add --no-cache git docker gcc make g++
 RUN go get github.com/Masterminds/glide
 RUN go build github.com/Masterminds/glide
 
